@@ -22,7 +22,7 @@ export default function SocialShareLayout({
           <div className="flex-1">
             <Link href="/" onClick={handleLogoClick}>
               <div className="btn btn-ghost normal-case text-2xl font-bold tracking-tight cursor-pointer">
-                Priyam's AI Powered SaaS
+              Priyam&apos;s AI Powered
               </div>
             </Link>
           </div>
