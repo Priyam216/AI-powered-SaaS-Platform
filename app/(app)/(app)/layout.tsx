@@ -15,7 +15,7 @@ import {
 
 const sidebarItems = [
   { href: "/home", icon: LayoutDashboardIcon, label: "Home Page" },
-  { href: "/social-share", icon: Share2Icon, label: "Social Share" },
+  // { href: "/social-share", icon: Share2Icon, label: "Social Share" },
   { href: "/video-upload", icon: UploadIcon, label: "Video Upload" },
 ];
 
@@ -60,9 +60,9 @@ export default function AppLayout({
               </label>
             </div>
             <div className="flex-1">
-              <Link href="/home" onClick={handleLogoClick}>
+              <Link href="/" onClick={handleLogoClick}>
                 <div className="btn btn-ghost normal-case text-2xl font-bold tracking-tight cursor-pointer">
-                  Cloudinary Showcase
+                  Priyam's AI Powered SaaS
                 </div>
               </Link>
             </div>
@@ -104,7 +104,7 @@ export default function AppLayout({
         <label htmlFor="sidebar-drawer" className="drawer-overlay"></label>
         <aside className="bg-base-200 w-64 h-full flex flex-col">
           <div className="flex items-center justify-center py-4">
-            <ImageIcon className="w-10 h-10 text-primary" />
+              {/* Can insert any Logo icon Here in future */}
           </div>
           <ul className="menu p-4 w-full text-base-content flex-grow">
             {sidebarItems.map((item) => (
@@ -124,7 +124,7 @@ export default function AppLayout({
               </li>
             ))}
           </ul>
-          {user && (
+          {/* {user && (
             <div className="p-4">
               <button
                 onClick={handleSignOut}
@@ -134,7 +134,7 @@ export default function AppLayout({
                 Sign Out
               </button>
             </div>
-          )}
+          )} */}
         </aside>
       </div>
     </div>

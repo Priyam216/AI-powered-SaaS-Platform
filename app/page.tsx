@@ -9,6 +9,11 @@ export default function Home() {
   const handleGetStartedClick = () => {
     router.push('/home');  
   };
+
+  const handleImageResizerClick = () => {
+    router.push('/social-share');  
+  };
+  
   return (
     <div className="min-h-screen flex flex-col">
   {/* Hero Section */}
@@ -65,9 +70,14 @@ export default function Home() {
         <div className="container mx-auto text-center px-4">
           <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Profile?</h2>
           <p className="text-lg mb-8">Sign up today and start using our AI-powered platform to automate your processes.</p>
-          <button className="btn btn-primary" onClick={handleGetStartedClick}>
-          Get Started
+                  
+        <button className="btn btn-primary mr-4" onClick={handleImageResizerClick}>
+          AI powered Image Resizer
         </button>
+        
+        <button className="btn btn-primary" onClick={handleGetStartedClick}>
+          Video Compressor
+        </button >
         </div>
       </section>
 
