@@ -4,10 +4,12 @@ import { NextResponse } from 'next/server';
 const isPublicRoute = createRouteMatcher([
     "/sign-in",
     "/sign-up",
-    "/"
+    "/",
+    "/social-share"
 ])
 const isPublicApiRoute = createRouteMatcher([
-    "/api/videos"
+    "/api/videos",
+    "/api/image-upload"
 ])
 
 
